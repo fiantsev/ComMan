@@ -1,0 +1,35 @@
+df -h
+pwd
+ls -l
+du
+whoami
+sudo -i
+mkdir www
+rmdir www
+Удалить файл
+rm fileName
+Удалить все файлы из указанной директории
+rm -rf folderName
+Для смены пользователя
+su - userName
+Для смены на root
+su - 
+exit - осуществляет выход из сессии в кую я зашёл использовав su если дальше продолжать выходить то можно выйти из Putty когда выйдется из самой первой сессии. При использовании su сессии вкладываются
+Найти  процесс с нодом
+ps -e|grep node
+screen -ls
+Чтобы не запускать node приложения из под рута на порте 80 можно сделать прокидку портов след образом
+iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 3000
+Очистка экрана
+clear
+Если нужно очистить экран и переинициализировать bash тогда
+reset
+Получение файлов удаленных
+wget/curl
+wget http://95.213.151.109/_Static/VisualsFavicon.png
+Редактор файлов
+nano
+Инфо о файле
+ls -l fileName
+stat fileName
+file fileName

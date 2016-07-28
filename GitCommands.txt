@@ -1,1 +1,17 @@
 ﻿git checkout -b newBranchName
+Показать разницу в коммитах между удаленным репо и локальным
+git log master..origin/master --oneline
+Показать содержимое файла  8 коммитов назад
+git show HEAD~8:TMonitorServer/_Static/CSS/dashboard.css
+Если на до переключаться между несколькими вариантами то можно воспользоваться stash
+git stash
+git stash list
+git stash apply stash@{0}
+git checkout HEAD -- .
+Если очень хочеться добавить в текущий коммит забытые изменения и запульнуть на сервер
+git commit --amend
+git push -f origin master
+git commit --amend --no-edit
+git ls-files
+Быстрый способ перезаписать старый коммит
+git commit --amend --no-edit && git push -f origin
