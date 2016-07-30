@@ -15,3 +15,7 @@ git commit --amend --no-edit
 git ls-files
 Быстрый способ перезаписать старый коммит
 git commit --amend --no-edit && git push -f origin
+Посмотреть куда указывает HEAD
+git show-ref --head
+Посмотреть удаленную ветку скопированную в локальный репо (после fetch)
+git log origin/dev --oneline
