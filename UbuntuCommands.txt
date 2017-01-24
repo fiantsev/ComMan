@@ -17,7 +17,11 @@ su -
 exit - осуществл€ет выход из сессии в кую € зашЄл использовав su если дальше продолжать выходить то можно выйти из Putty когда выйдетс€ из самой первой сессии. ѕри использовании su сессии вкладываютс€
 Ќайти  процесс с нодом
 ps -e|grep node
+screen -S ViStats
 screen -ls
+screen Ctrl-a d
+screen -r ViStats
+screen -d -r ViStats
 „тобы не запускать node приложени€ из под рута на порте 80 можно сделать прокидку портов след образом
 iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 3000
 ќчистка экрана
@@ -33,3 +37,14 @@ nano
 ls -l fileName
 stat fileName
 file fileName
+ѕосмотреть открытые порты
+netstat -tupln
+sudo node telemetryServer.js > /dev/null 2> /dev/null &
+find fileName
+Deploying NodeJS application (если приложению нужен порт 80 то запускать из под sudo и остальные команды исп-ть с sudo)
+sudo npm install -g forever
+sudo forever start telemetryServer.js
+sudo forever list
+«апускаем forever с перенаправлением потоков logs и stout -> null , stderr->txt
+sudo forever start -f -a -o /dev/null -e ../../tmonitor_error.txt telemetryServer.js
+sudo forever stopall

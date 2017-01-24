@@ -19,3 +19,14 @@ git commit --amend --no-edit && git push -f origin
 git show-ref --head
 Посмотреть удаленную ветку скопированную в локальный репо (после fetch)
 git log origin/dev --oneline
+Если git надо удалить из папки с проектом - выполнить след из корня проекта
+rm -rf .git
+git config --global credential.helper wincred
+Показать количество коммитов от текущего HEAD вниз до самого первого
+git rev-list HEAD --count
+git log --oneline
+Чтобы не было этого сообщения WARNING: terminal is not fully functional в CMD следует создать новую Enviroment variable TERM
+set TERM=xterm
+git checkout -b newBranchName
+git mv folderNameFrom folderNameTo
+git log --oneline --graph --decorate

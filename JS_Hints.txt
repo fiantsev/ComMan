@@ -1,0 +1,2 @@
+Форматированный вывод чисел ввида 07:30
+let hourOffset = ("00" + timezoneOffset/60).slice(-2);
