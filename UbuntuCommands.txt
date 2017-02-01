@@ -48,3 +48,22 @@ sudo forever list
 Запускаем forever с перенаправлением потоков logs и stout -> null , stderr->txt
 sudo forever start -f -a -o /dev/null -e ../../tmonitor_error.txt telemetryServer.js
 sudo forever stopall
+sudo truncate -s 0 /home/ubuntu/.forever/4HwI.log
+=============sreen=============
+screen -S name
+screen -r name
+screen -ls
+Внутри скрина
+Ctrl-a c создать новое окно
+Ctrl-a n к следующему окну
+Ctrl-a p к предыдущему окну
+Ctrl-a " список всех окон
+Ctrl-a w показать строку состояния
+Ctrl-a A переименовать окно
+Ctrl-a | сплит вертикально
+Ctrl-a S сплит горизонтально
+Ctrl-a Tab к следующему региону
+Ctrl-a X закрыть текущий регион
+Ctrl-a Q закрыть все регионы кроме текущего
+===============================
+man hier

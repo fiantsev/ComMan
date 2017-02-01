@@ -1,0 +1,5 @@
+»щем процесс кый весит на 80 порту
+netstat -ano | findstr "0.0.0.0:80"
+taskkill /pid 61792 /f
+ipconfig /flushdns
+tasklist | more /e

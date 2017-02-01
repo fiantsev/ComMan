@@ -30,3 +30,4 @@ set TERM=xterm
 git checkout -b newBranchName
 git mv folderNameFrom folderNameTo
 git log --oneline --graph --decorate
+git rm --cached fileName
