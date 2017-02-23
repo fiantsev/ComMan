@@ -1,4 +1,9 @@
 ﻿npm init --yes
 npm view packageName version
 npm version 0.1.6
+    npm major
+    npm minor
+    npm patch
 npm ls --depth 0
+npm outdated
+npm update
