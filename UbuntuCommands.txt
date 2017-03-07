@@ -67,3 +67,4 @@ Ctrl-a X закрыть текущий регион
 Ctrl-a Q закрыть все регионы кроме текущего
 ===============================
 man hier
+cp sourceName destinationName
