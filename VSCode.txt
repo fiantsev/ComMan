@@ -1,0 +1,8 @@
+﻿Ctrl+Shift+O	быстрая навигация к объекту по имени, id, className
+Alt+Shift+R	показать в Explorer
+F9	обычный брейкпоинт
+Shift+F9	инлайн брейкпоинт
+Ctrl+Q	быстрый доступ (не очень нужная панелька)
+F1 | Ctrl+Shift+P	команд палит
+Ctrl+H	заменить выделенный текст новым значением
+File->Preferences->Keyboard Shortcuts->Ctrl+K Ctrl+K	откроет окно в ком надо вбить новую комбинацию и автоматически создаст новый shortcuts
