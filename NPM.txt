@@ -2,3 +2,4 @@
 npm view packageName version
 npm version 0.1.6
 npm ls --depth 0
+npm publish
