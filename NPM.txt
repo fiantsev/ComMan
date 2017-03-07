@@ -3,3 +3,13 @@ npm view packageName version
 npm version 0.1.6
 npm ls --depth 0
 npm publish
+    npm major
+    npm minor
+    npm patch
+npm outdated
+npm update
+npm config ls -l полный списко всех настроек
+npm whoami
+npm login
+npm publish
+npm i packName -f заставляет перезагрузить и обновить

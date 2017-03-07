@@ -7,6 +7,7 @@ git show HEAD~8:TMonitorServer/_Static/CSS/dashboard.css
 git stash
 git stash list
 git stash apply stash@{0}
+git stash pop - побыстрому востановить последний сташ, удобно сделать git stash -> npm version -> git stash pop
 git checkout HEAD -- .
 Если очень хочеться добавить в текущий коммит забытые изменения и запульнуть на сервер
 git commit --amend

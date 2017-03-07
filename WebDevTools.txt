@@ -1,0 +1,7 @@
+﻿Chrome
+	debug(functionName)
+	monitor(functionName)
+	copy
+	debugger;
+Firefox
+	Shift+F2
