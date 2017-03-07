@@ -1,11 +1,11 @@
 ﻿npm init --yes
+npm ls --depth 0
 npm view packageName version
 npm version 0.1.6
-npm ls --depth 0
-npm publish
     npm major
     npm minor
     npm patch
+npm publish
 npm outdated
 npm update
 npm config ls -l полный списко всех настроек

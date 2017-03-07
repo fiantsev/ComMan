@@ -32,3 +32,13 @@ git checkout -b newBranchName
 git mv folderNameFrom folderNameTo
 git log --oneline --graph --decorate
 git rm --cached fileName
+Если git ругается что не те credential и динаит доступ то
+    Загрузить приватный репо под другим пользователем можно так https://userName:userPassword@github.com/TilliWilli5/DevTemp.git
+    Почистить кредншелы на компе git
+        credential-cache exit
+        git config --global --unset credential.helper
+        git config --system --unset credential.helper
+        Win+R -> credential manager -> Generic Credentials -> Remove from vault appropriate
+Как решать мерж конфликты
+git merge -> git status -> Unmerged paths -> edit, delete all <<<<< ====== >>>>>> stuff and save -> git add . -> git commit -m "Resolved merge conflict by somehow"
+Если файл был удален кем то и я хочу подтвердить удаление то git rm fileName -> git commit
