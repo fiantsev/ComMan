@@ -1,0 +1,5 @@
+Работаем с виртуальными окнами
+Windows Key + Tab -> New desktop
+Windows Key + Ctrl + D
+Windows Key + Ctrl + Left Arrow
+Windows Key + Ctrl + Right Arrow

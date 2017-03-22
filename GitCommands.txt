@@ -42,3 +42,7 @@ git rm --cached fileName
 Как решать мерж конфликты
 git merge -> git status -> Unmerged paths -> edit, delete all <<<<< ====== >>>>>> stuff and save -> git add . -> git commit -m "Resolved merge conflict by somehow"
 Если файл был удален кем то и я хочу подтвердить удаление то git rm fileName -> git commit
+git diff --name-only e7e60dd HEAD   посмотреть разницу по файлам между двумя различными коммитами
+git config --global user.name "userName"
+git config --global user.email "email"
+git clone -b branchName --single-branch https://github.com/Polymedia/VIP-Dashboards.git клонировать только одну ветку с удаленного репо
