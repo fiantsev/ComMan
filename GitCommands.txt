@@ -9,6 +9,7 @@ git stash list
 git stash apply stash@{0}
 git stash pop - побыстрому востановить последний сташ, удобно сделать git stash -> npm version -> git stash pop
 git checkout HEAD -- .
+git checkout -- *	если надо восстановить удаленные файлы кые есть в текущем коммите но были удалены
 Если очень хочеться добавить в текущий коммит забытые изменения и запульнуть на сервер
 git commit --amend
 git push -f origin master
@@ -46,3 +47,6 @@ git diff --name-only e7e60dd HEAD   посмотреть разницу по ф�
 git config --global user.name "userName"
 git config --global user.email "email"
 git clone -b branchName --single-branch https://github.com/Polymedia/VIP-Dashboards.git клонировать только одну ветку с удаленного репо
+git branch --merged
+git branch -d branchName    не будет удалять ветку если она не смержена
+git branch -D branchName    удалит ветку даже если она уже смёрженна

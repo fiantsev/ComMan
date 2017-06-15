@@ -1,5 +1,7 @@
-Ищем процесс кый весит на 80 порту
+пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 80 пїЅпїЅпїЅпїЅпїЅ
 netstat -ano | findstr "0.0.0.0:80"
 taskkill /pid 61792 /f
 ipconfig /flushdns
 tasklist | more /e
+netstat -ano | more /E
+runas /noprofile /user:userName cmd
