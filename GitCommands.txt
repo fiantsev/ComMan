@@ -50,3 +50,7 @@ git clone -b branchName --single-branch https://github.com/Polymedia/VIP-Dashboa
 git branch --merged
 git branch -d branchName    не будет удалять ветку если она не смержена
 git branch -D branchName    удалит ветку даже если она уже смёрженна
+git branch -v --sort=committerdate DESC
+git branch -v --sort=-committerdate ASC
+все слитые ветки отсортированные по дате последнего комита вместе с датой последнего комита
+    git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - (%(color:green)%(committerdate:relative)%(color:reset))' --merged
